@@ -41,6 +41,20 @@ public class Main {
         }
     }
 
+    public static void decryptCaesarMenu() {
+        // beder brugeren om ciphertext
+        // beder brugeren om shift-værdi
+        // kalder caesarDecrypt med ciphertext og shift-værdi
+        // udskriver plaintext modtaget fra ovenstående
+    }
+
+    public static void encryptCaesarMenu() {
+        // beder brugeren om plaintext
+        // beder brugeren om shift-værdi
+        // kalder caesarEncrypt med ciphertext og shift-værdi
+        // udskriver ciphertext modtaget fra ovenstående
+    }
+
     public static String listOfNumbersToText ( int[] numbers){
         String text = ""; // En tom String
         for(int i = 0; i < numbers.length; i++){
@@ -58,7 +72,7 @@ public class Main {
         return letter;
     }
 
-    private static int[] textToListOfNumbers(String plainText) {
+    public static int[] textToListOfNumbers(String plainText) {
         //Skal kalde letterToNumber
         return new int[0];
     }
@@ -67,6 +81,20 @@ public class Main {
         String alphabet = " ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
         int number = alphabet.indexOf(letter);
         return number;
+    }
+
+    public static String caesarEncrypt( String plaintext, int shift ) {
+        // textToListOfNumbers
+        // shiftListOfNumbers
+        // listOfNumbersToText
+        return new String("");
+    }
+
+    public static String caesarDecrypt( String ciphertext, int shift ) {
+        // textToListOfNumbers
+        // shiftListOfNumbers
+        // listOfNumbersToText
+        return new String("");
     }
 
     public static int[] shiftListOfNumbers( int[] numbers, int shift ) {
